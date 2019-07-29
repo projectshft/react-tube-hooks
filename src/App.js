@@ -7,7 +7,6 @@ import VideoList from "./components/video_list";
 const axios = require('axios');
 const API_KEY = "AIzaSyAyrpbJRQ9C6LgkCwCkgzG1welKjI1UlhI";
 
-
 function App() {
   const [videos, setVideos] = useState([]);
   const [selectedVideo, setSelectedVideo] = useState(null);
