@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const SearchBar = ({ videoSearch }) => {
+const SearchBar = (props) => {
   const [term, setTerm] = useState("");
 
   return (
@@ -9,7 +9,7 @@ const SearchBar = ({ videoSearch }) => {
         value={term}
         onChange={event => {
           setTerm(event.target.value)
-          videoSearch(term)
+          props.videoSearch(term)
         }}
       />
     </div>
